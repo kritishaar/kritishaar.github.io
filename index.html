@@ -1,43 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kritisha | My Website</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            color: #333;
-        }
-        .box {
-            margin-top: 100px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        p {
-            font-size: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #555;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Web Developer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background: linear-gradient(to right,#007bff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:white;
+    color:#007bff;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#222;
+    color:white;
+}
+
+/* Sections */
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+/* Services */
+.service-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.service-box{
+    background:#f4f4f4;
+    padding:25px;
+    width:260px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-5px);
+}
+
+/* Contact */
+#contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+</style>
+
 </head>
 <body>
-    <div class="box">
-        <h1>Hi, I'm Kritisha 👋</h1>
-        <p>Welcome to my personal website 🚀</p>
-        <button onclick="alert('Thank you for visiting! 💖')">Click Me</button>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Professional Web Developer</p>
+    <a href="#contact" class="btn">Hire Me</a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer creating modern, responsive and business-focused websites.</p>
+</section>
+
+<section id="services">
+    <h2>My Services</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <h3>Website Design</h3>
+            <p>Modern and responsive website design for your business.</p>
+        </div>
+        <div class="service-box">
+            <h3>Website Development</h3>
+            <p>Custom coded websites using latest technologies.</p>
+        </div>
+        <div class="service-box">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website ranking and grow your business.</p>
+        </div>
     </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your@email.com</p>
+    <p>Phone: +91 0000000000</p>
+</section>
+
+<footer>
+    <p>© 2026 Your Name | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
